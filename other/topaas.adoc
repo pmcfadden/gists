@@ -1,3 +1,7 @@
+//hide
+//graph
+//setup
+//output
 [source,cypher]
 ----
 CREATE (inventorytopologypoc:Host { name : 'Topaas' })
