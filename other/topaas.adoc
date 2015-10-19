@@ -1,3 +1,5 @@
+[source,cypher]
+----
 CREATE (inventorytopologypoc:Host { name : 'Topaas' })
 CREATE (minimon:Host { name : 'Mini Mon' })
 CREATE (devstack:Host { name : 'devstack' })
@@ -13,3 +15,4 @@ CREATE (ceilometerpublisher)-[:DEPENDS_ON { type : 'talks_to' }]->(topaasapi)
 CREATE (kafka)-[:DEPENDS_ON { type : 'runs_on' }]->(minimon)
 CREATE (topaasapi)-[:DEPENDS_ON { type : 'talks_to' }]->(kafka)
 
+----
